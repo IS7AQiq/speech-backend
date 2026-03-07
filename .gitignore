@@ -1,0 +1,30 @@
+# Virtual Environment
+venv/
+venv312/
+env/
+ENV/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Models (too large for GitHub)
+vosk-model*/
+models/
+*.fst
+*.mdl
+
+# Environment variables
+.env
+
+# IDE files
+.vscode/
+.idea/
+
+# Large binary files
+*.dll
+*.so
+*.dylib
+*.bin
