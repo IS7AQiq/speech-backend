@@ -1,15 +1,13 @@
 services:
   - type: web
     name: speech-therapy-backend
-    env: python
-    buildCommand: pip install -r requirements.txt
-    startCommand: uvicorn main:app --host 0.0.0.0 --port $PORT
+    env: docker
     envVars:
-      - key: SUPABASE_URL
+      - key: https://ptltzgidpkucvkqrnvhk.supabase.co
         sync: false
-      - key: SUPABASE_ANON_KEY
+      - key: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InB0bHR6Z2lkcGt1Y3ZrcXJudmhrIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzA0MDQ2NTYsImV4cCI6MjA4NTk4MDY1Nn0.xiyF-_WqdTLhvi6zf-9BLPwEoyOS5YJqD5xdxKzuA4M
         sync: false
-      - key: SUPABASE_SERVICE_KEY
+      - key: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InB0bHR6Z2lkcGt1Y3ZrcXJudmhrIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc3MDQwNDY1NiwiZXhwIjoyMDg1OTgwNjU2fQ.kxF8cBrbNHrfRsTvjeOuJtVnOvoyEb6l5vm-xs5ILo0
         sync: false
       - key: WHISPER_MODEL
         value: tiny
